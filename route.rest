@@ -1,0 +1,37 @@
+GET http://localhost:3000/hockeyPlayers
+
+###
+
+GET http://localhost:3000/hockeyPlayers/649cb0c81c736bb41b22c378
+
+###
+
+
+POST http://localhost:3000/hockeyPlayers/
+Content-Type: application/json
+
+{
+    "firstName": "Phil",
+    "lastName": "Boisvert", 
+    "position": "Winger",
+    "shoots": "right",
+    "number": 12
+}
+
+
+###
+
+DELETE http://localhost:3000/hockeyPlayers/649cb103288fce3691d44666
+
+
+
+####
+
+
+PATCH http://localhost:3000/hockeyPlayers/649cb11933f0a80435c61330
+Content-Type: application/json
+
+{
+    "shoots": "ddsaasd",
+    "number": 24
+}
